@@ -1,0 +1,47 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    position: relative;    
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    transform: translate(-20%, -70%);
+}
+
+header {
+    position: absolute;
+    top: 8%;
+    left: 43%;
+    color: white;
+}
+
+.bg {
+    object-fit: scale-down;
+    background-image: url('../img/drum.jpg');
+    background-size: 100% auto;
+    height: 100%;
+    /* position: fixed; */
+    z-index: 10000;
+}
+
+.key {
+    display: inline-block;
+    margin: 2%;
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+/* class to add when key is pressed */
+.playing {
+    background-color:  black;
+    font-size: 1.1em;
+    color: white;
+    transform: scale(1.2); 
+    border: 5px double yellow;
+}
