@@ -13,10 +13,14 @@ html {
 }
 
 header {
-    position: absolute;
-    top: 8%;
-    left: 43%;
     color: white;
+    font-family: 'Rock Salt', cursive;
+    margin: 20px 0 0 0;
+}
+
+header h1,
+header p {
+    font-size: 3rem;
 }
 
 .bg {
@@ -31,10 +35,16 @@ header {
 .key {
     display: inline-block;
     margin: 2%;
-    border: 2px solid black;
+    border: 3px inset white;
     padding: 2%;
     text-align: center;
     transition: all 0.4s;
+    background: rgba(24, 27, 26, 0.5);
+}
+
+#h,
+#i {
+    opacity: 1.0;
 }
 
 /* class to add when key is pressed */
@@ -43,5 +53,7 @@ header {
     font-size: 1.1em;
     color: white;
     transform: scale(1.2); 
-    border: 5px double yellow;
+    border: 5px outset yellow;
+    font-family: 'Rock Salt', cursive;
+
 }
